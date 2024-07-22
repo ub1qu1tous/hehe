@@ -38,6 +38,40 @@
     .text-shadow {
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     }
+
+    @media (max-width: 430px) {
+    /* Adjust image size */
+    #imageDisplay {
+      width: 100%;
+      height: auto;
+    }
+  
+    /* Adjust font size for the question text */
+    #valentineQuestion {
+      font-size: 2rem; /* Reduce font size for smaller screens */
+      text-align: center; /* Center align text */
+      margin: 1rem 0; /* Adjust margin */
+    }
+  
+    /* Adjust button styles */
+    #yesButton, #noButton {
+      min-width: 50px; /* Reduce minimum width for buttons */
+      font-size: 1rem; /* Reduce font size */
+      padding: 0.5rem 1rem; /* Adjust padding */
+    }
+  
+    /* Adjust button container spacing */
+    #responseButtons {
+      gap: 1rem; /* Reduce gap between buttons */
+      flex-direction: column; /* Stack buttons vertically */
+    }
+  
+    /* Adjust the main container padding */
+    .flex.flex-col.items-center.p-4 {
+      padding: 1rem; /* Reduce padding */
+    }
+  }
+    
   </style>
 </head>
 <body class="gradient-background">
